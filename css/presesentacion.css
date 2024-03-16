@@ -7,7 +7,6 @@
    ;
   background-position: center;
   background-size: cover;
-  border: none;
 }
 .desenfoque {
   display: flex;
@@ -110,6 +109,10 @@ strong {
   .franco {
     width: 290px;
     height: 290px;
+  }
+  .links{
+    z-index: 12211212;
+
   }
 
   .titulosPresentacion h1 {
