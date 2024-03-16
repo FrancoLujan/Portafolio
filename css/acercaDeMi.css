@@ -190,11 +190,31 @@
       
 }
 @media (height <= 600px ) {
-    .acercaDeMi{
-      height: 97vh;
-    }
-    .acercaDeMi p{
-      font-size: 0.6rem;
+     .imformacion{
+      height: max-content;
+     }
+      .acercaDeMi p{
+      font-size: 0.7rem;
+      }
+      .tecnologias{
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+
+      }
+      @keyframes despliegue {
+        from {
+          top: 0px;
+        }
+        to {
+          top: 127%;
+          
+          border-radius: 0px 20px 20px 0px;
+          
+          
+          
+          
+          
+        }
+      }
     }
     
-}
