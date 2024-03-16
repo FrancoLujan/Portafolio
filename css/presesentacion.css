@@ -1,0 +1,134 @@
+.presentacion {
+  background-image: linear-gradient(
+      184deg,
+      black 0%,
+      black 100%
+    ),
+   ;
+  background-position: center;
+  background-size: cover;
+  border: none;
+}
+.desenfoque {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  backdrop-filter: blur(3.8px);
+}
+.contendorImagenIconos {
+  width: 30%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.franco {
+  width: 390px;
+  height: 390px;
+  border-radius: 50%;
+}
+.links {
+  width: 150px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.links img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s linear;
+}
+.links img:hover {
+  transform: scale(150%);
+}
+
+.titulosPresentacion {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px auto;
+}
+
+.titulosPresentacion h1 {
+  font-size: 5rem;
+  color: white;
+  font-family: "Gemunu Libre", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 20px;
+  text-align: center;
+  text-wrap: nowrap;
+  animation: aparicion 1.2s linear 1;
+}
+.titulosPresentacion h2 {
+  color: rgba(187, 184, 184, 0.795);
+  font-size: 3rem;
+  font-family: "Simonetta", serif;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 5px;
+
+  animation: aparicion 1.3s linear 1;
+}
+strong {
+  color: var(--colorEspecial);
+  font-weight: normal;
+  font-size: 3.1rem;
+
+  animation: aparicion 2s linear 1;
+}
+@keyframes aparicion {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    display: 1;
+  }
+}
+
+@media (width < 700px) {
+  .desenfoque {
+    flex-direction: column;
+  }
+
+  .contendorImagenIconos {
+    width: 100%;
+    margin: 0px;
+
+    gap: 2px;
+  }
+  .franco {
+    width: 290px;
+    height: 290px;
+  }
+
+  .titulosPresentacion h1 {
+    position: absolute;
+    margin: 25px 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    font-size: 3.3rem;
+    text-align: center;
+    text-wrap: wrap;
+  }
+  .titulosPresentacion h2 {
+    position: absolute;
+    top: 77%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    letter-spacing: 10px;
+  }
+}

@@ -1,0 +1,190 @@
+.acercaDeMi {
+  height: 78vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorImformacionTecnologias {
+  display: flex;
+
+  position: relative;
+  width: 750px;
+  height: 73%;
+}
+
+.imformacion {
+  background-color: var(--colorTargeta);
+  color: white;
+  position: relative;
+  width: 50%;
+
+  z-index: 1;
+
+  font-size: 1.2rem;
+  border-radius:  20px ;
+  padding: 10px;
+  
+}
+.imformacion h3{
+    text-align: center;
+    margin: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imformacion p {
+  font-size: 12.7px;
+  line-break: strict;
+  line-height: 20px;
+
+  margin: 12px;
+
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2.7px;
+  
+}
+.falsoBoton {
+  position: absolute;
+  
+
+  left: 95%;
+  top: 45%;
+  right: 0px;
+  bottom: 0px;
+  z-index: 3;
+  font-size: 3.2rem;
+  color: grey;
+  cursor: pointer;
+
+  width: 50px;
+  height: 50px;
+}
+
+.tecnologias {
+  z-index: 0;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.2326505602240896) 91%
+  );
+  border:2px solid rgba(255, 255, 255, 0.068);
+  border-radius: 20px;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  display: block;
+
+}
+
+.tecnologias h2 {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  
+}
+.tecnologiasImagenes {
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.tecnologiasImagenes img {
+  width: 50px;
+  height: 50px;
+}
+@keyframes despliegue {
+  from {
+    left: 0px;
+   
+    
+  }
+  to {
+    left: 360px;
+    border-radius: 0px 20px 20px 0px;
+    
+  }
+}
+
+
+@media (width < 700px) {
+ 
+.acercaDeMi{
+  margin:100px 0px 440px 0px ;
+}
+    .contenedorImformacionTecnologias {
+        display: flex;
+      
+        position: relative;
+        width: 100%;
+        height: 73%;
+ 
+      }
+      .imformacion {
+        background-color: var(--colorTargeta);
+        color: white;
+        
+        width: 100%;
+      }
+      .imformacion p{
+        font-size: 15px;
+      }
+      .falsoBoton {
+        
+        left:50%;
+        transform: translateX(-50%);
+        top: 95%;
+        right: 0px;
+        bottom: 0px;
+      
+        
+        transform: rotate(90deg);
+      }
+      .tecnologias {
+       
+        width: 100%;
+        height: 100%;
+      
+        background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0.2326505602240896) 91%
+        );
+        border:2px solid rgba(255, 255, 255, 0.068);
+        border-radius: 20px;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+        
+        
+        
+      }
+      .tecnologias h2{
+        margin: 10px
+      }
+      @keyframes despliegue {
+        from {
+          top: 0px;
+        }
+        to {
+          top: 95%;
+          
+          border-radius: 0px 20px 20px 0px;
+          
+          
+          
+          
+          
+        }
+      }
+      
+}

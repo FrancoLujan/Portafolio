@@ -1,0 +1,36 @@
+:root{
+    --colorPrincipal: #0e0c0e;
+
+    --colorSecundario: #2B2A2A;
+    --colorTargeta: #314850;
+    --colorEspecial: #FFED00;
+
+    --colorFiltro1: rgba(0, 0, 0, 0.8);
+    --colorFiltro2: rgba(0, 0, 0, 0.7);
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    cursor: default;
+}
+body{
+    background-color: #000005;
+    
+    
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+    
+  
+    
+    
+  }
+  body::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    height: 5px;
+    border: 2px solid var(--colorSecundario);
+    border-radius: 20px;
+  }
+  
