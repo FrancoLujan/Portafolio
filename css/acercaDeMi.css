@@ -189,3 +189,12 @@
       }
       
 }
+@media (height <= 600px ) {
+    .acercaDeMi{
+      height: 97vh;
+    }
+    .acercaDeMi p{
+      font-size: 0.6rem;
+    }
+    
+}
