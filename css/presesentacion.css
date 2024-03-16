@@ -8,9 +8,11 @@
   background-position: center;
   background-size: cover;
 }
+
 .desenfoque {
   display: flex;
   height: 100vh;
+  width: 100vw;
   position: relative;
   backdrop-filter: blur(3.8px);
 }
@@ -123,6 +125,8 @@ strong {
     right: 0px;
     bottom: 0px;
     font-size: 3.3rem;
+    
+    height: 0px;
     text-align: center;
     text-wrap: wrap;
   }
@@ -134,5 +138,6 @@ strong {
     bottom: 0px;
     text-align: center;
     letter-spacing: 10px;
+    margin: auto 0px;
   }
 }

@@ -13,19 +13,21 @@
     margin: 0px;
     padding: 0px;
     cursor: default;
+    max-width: 100%;
+  
 }
 body{
     background-color: #000005;
-    overflow-x: hidden;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
+    
+   
+
     
 }
 
 body::-webkit-scrollbar{
     width: 7px;
-    
-  
     
     
   }
