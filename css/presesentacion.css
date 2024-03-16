@@ -41,6 +41,7 @@
   width: 30px;
   height: 30px;
   transition: transform 0.2s linear;
+  cursor: pointer;
 }
 .links img:hover {
   transform: scale(150%);
