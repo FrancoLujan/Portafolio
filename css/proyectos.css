@@ -24,7 +24,7 @@
 }
 .proyecto{
     height: 30%;
-    width: 30%;
+    width: 55%;
     
  
 
@@ -61,18 +61,17 @@
     background-position: center;
     
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-color: black;
 }
 .encriptador{
     background-image: url(../img/encriptador.png);
     
    
     background-position: center;
-    background-size:100% 100%;
+    background-size:cover;
     background-repeat: no-repeat;
-  
-   
-    
+    background-color: black;
 }
 .palindromo{
     background-image: url("../img/palindromo.png");
@@ -172,13 +171,14 @@
 
 @media (width < 700px) {
  
-  
+
     .proyectosImformacion h3{
         font-size: 1.8rem;
         margin: 5px;
     }
     .proyectosImformacion p{
         font-size: 1rem;
+        margin: 5px 0px;
     }
     .hecho{
         padding: 20px;
@@ -187,8 +187,13 @@
         padding: 5px ;
     }
     .proyecto{
-        height: 70%;
-        width: 70%;
+       
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+       background-color: transparent;
+       margin: 15px;
+       
     }
     
 }
