@@ -28,9 +28,13 @@
 }
 
 .franco {
-  width: 390px;
-  height: 390px;
-  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+  border-radius: 510%;
+  
+  object-fit: cover;
+  
+  
 }
 .links {
   width: 150px;
